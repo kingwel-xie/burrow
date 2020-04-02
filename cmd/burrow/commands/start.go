@@ -31,6 +31,10 @@ func Start(output Output) func(cmd *cli.Cmd) {
 				output.Fatalf("could not boot Burrow kernel: %v", err)
 			}
 
+			RunCli("burrow", nil, func(m map[string]interface{}) {
+				m["Kernel"] = kern
+			})
+
 			kern.WaitForShutdown()
 		}
 	}

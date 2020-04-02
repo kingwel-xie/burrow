@@ -376,3 +376,7 @@ func (kern *Kernel) Shutdown(ctx context.Context) (err error) {
 	})
 	return
 }
+
+func (kern *Kernel) DB() dbm.DB {
+	return kern.database
+}

@@ -13,6 +13,8 @@ require (
 	github.com/asaskevich/govalidator v0.0.0-20180720115003-f9ffefc3facf // indirect
 	github.com/btcsuite/btcd v0.0.0-20190523000118-16327141da8c
 	github.com/cep21/xdgbasedir v0.0.0-20170329171747-21470bfc93b9
+	github.com/chzyer/logex v1.1.10 // indirect
+	github.com/chzyer/test v0.0.0-20180213035817-a1ea475d72b1 // indirect
 	github.com/eapache/channels v1.1.0
 	github.com/eapache/queue v1.1.0 // indirect
 	github.com/elgs/gojq v0.0.0-20160421194050-81fa9a608a13
@@ -29,6 +31,7 @@ require (
 	github.com/imdario/mergo v0.3.7
 	github.com/jawher/mow.cli v1.1.0
 	github.com/jmoiron/sqlx v1.2.0
+	github.com/kingwel-xie/readline v1.5.0
 	github.com/lib/pq v1.1.1
 	github.com/mattn/go-colorable v0.1.2 // indirect
 	github.com/mattn/go-sqlite3 v1.10.0
@@ -50,6 +53,7 @@ require (
 	github.com/tendermint/tm-db v0.4.0
 	github.com/test-go/testify v1.1.4
 	github.com/tmthrgd/go-hex v0.0.0-20190303111820-0bdcb15db631
+	github.com/urfave/cli/v2 v2.2.0
 	github.com/xeipuuv/gojsonpointer v0.0.0-20180127040702-4e3ac2762d5f // indirect
 	github.com/xeipuuv/gojsonreference v0.0.0-20180127040603-bd5ef7bd5415 // indirect
 	github.com/xeipuuv/gojsonschema v1.1.0
