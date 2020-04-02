@@ -41,8 +41,8 @@ func Accounts(output Output) func(cmd *cli.Cmd) {
 			}
 
 			for acc, err := stream.Recv(); err == nil; acc, err = stream.Recv() {
-				output.Printf("Account: %s\n  Sequence: %d",
-					acc.Address.String(), acc.Sequence)
+				output.Printf("Account: %s\n  Sequence: %d  Balance: %d",
+					acc.Address.String(), acc.Sequence, acc.Balance)
 
 				if len(acc.PublicKey.PublicKey) > 0 {
 					output.Printf("  Public Key: %s\n", acc.PublicKey.String())
