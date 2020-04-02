@@ -11,7 +11,7 @@ func DefaultKeysConfig() *KeysConfig {
 	return &KeysConfig{
 		// Default Monax keys port
 		GRPCServiceEnabled:      true,
-		AllowBadFilePermissions: false,
+		AllowBadFilePermissions: true, // kingwel, make windows happy
 		RemoteAddress:           "",
 		KeysDirectory:           DefaultKeysDir,
 	}

@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"io/ioutil"
 	"os"
-	"path"
+	"path/filepath"
 
 	"github.com/hyperledger/burrow/binary"
 	"github.com/hyperledger/burrow/consensus/abci"
@@ -122,7 +122,7 @@ func NewNodeKey() *p2p.NodeKey {
 }
 
 func WriteNodeKey(nodeKeyFile string, key json.RawMessage) error {
-	err := os.MkdirAll(path.Dir(nodeKeyFile), 0777)
+	err := os.MkdirAll(filepath.Dir(nodeKeyFile), 0777)
 	if err != nil {
 		return err
 	}
@@ -130,7 +130,7 @@ func WriteNodeKey(nodeKeyFile string, key json.RawMessage) error {
 }
 
 func EnsureNodeKey(nodeKeyFile string) (*p2p.NodeKey, error) {
-	err := os.MkdirAll(path.Dir(nodeKeyFile), 0777)
+	err := os.MkdirAll(filepath.Dir(nodeKeyFile), 0777)
 	if err != nil {
 		return nil, err
 	}
